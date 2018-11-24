@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck6"
+    tools:context=".Driver">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/start_point"
+            android:layout_width="315dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="22dp"
+            android:textSize="20sp"
+            android:background="@drawable/roundbutton2"
+            android:textColor="#ffffff"
+            android:hint="START POINT"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/end_point"
+            android:layout_width="315dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/roundbutton2"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:hint="END POINT"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_point" />
+
+        <EditText
+            android:id="@+id/route"
+            android:layout_width="315dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/roundbutton2"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:hint="ROUTE"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/end_point" />
+
+        <EditText
+            android:id="@+id/vehicleno"
+            android:layout_width="317dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/roundbutton2"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:hint="VECHILE NO"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/route" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbutton2"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:hint="PICK UP TIME"
+            android:inputType="time"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vehicleno" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="121dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="228dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time"
+            app:srcCompat="@drawable/seats_back" />
+
+        <Button
+            android:id="@+id/seat1"
+            android:layout_width="39dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:background="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <Button
+            android:id="@+id/seat2"
+            android:layout_width="43dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="60dp"
+            android:background="#00000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <Button
+            android:id="@+id/seat3"
+            android:layout_width="44dp"
+            android:layout_height="82dp"
+            android:layout_marginEnd="228dp"
+            android:layout_marginTop="60dp"
+            android:background="#00000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <TextView
+            android:id="@+id/seats"
+            android:layout_width="237dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginTop="20dp"
+            android:text="NO OF SEATS AVAILABLE"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/roundbutton2"
+            android:text="UPDATE"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seats" />
+
+</android.support.constraint.ConstraintLayout>

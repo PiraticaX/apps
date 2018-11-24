@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <ImageButton
+        android:id="@+id/register_addimg"
+        android:layout_width="100dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="36dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/rounded_btn"
+        android:cropToPadding="false"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_uname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_btn"
+        android:hint="  Enter your username"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_addimg" />
+
+    <EditText
+        android:id="@+id/register_phno"
+        android:inputType="number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn"
+        android:hint="  Enter your Phone Number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_uname" />
+
+    <EditText
+        android:id="@+id/register_emailid"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn"
+        android:hint="  Enter your email id"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_phno" />
+
+    <EditText
+        android:id="@+id/register_pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn"
+        android:hint="  Enter your new password"
+        android:password="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_emailid" />
+
+    <EditText
+        android:id="@+id/register_cpass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn"
+        android:hint="confirm your new password"
+        android:password="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pass" />
+
+    <Button
+        android:id="@+id/register_registerbtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/button1"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_emailid" />
+</android.support.constraint.ConstraintLayout>
